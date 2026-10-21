@@ -1,0 +1,5 @@
+# Ignore Python compiled bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
