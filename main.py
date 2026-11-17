@@ -9,7 +9,11 @@ screen.bgcolor("black")
 screen.tracer(0)
 snake = Snake()
 game_on = True
-
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
 def end_game()->bool:
     if snake.head.xcor() >= 250:
         return True
