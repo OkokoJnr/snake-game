@@ -15,7 +15,7 @@ screen.onkey(snake.down, "Down")
 screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
 def end_game()->bool:
-    if snake.head.xcor() >= 250:
+    if snake.head.xcor() >= 250 or snake.head.xcor() <= -250 or snake.head.ycor() >= 250 or snake.head.ycor() <= -250:
         return True
     return False
 while game_on:
